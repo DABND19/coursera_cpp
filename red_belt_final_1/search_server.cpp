@@ -33,11 +33,14 @@ void SearchServer::UpdateDocumentBase(istream &document_input)
 void SearchServer::AddQueriesStream(
     istream &query_input, ostream &search_results_output)
 {
+  vector<size_t> docid_count(index.GetDocsNum());
+  vector<size_t> search_results_indices(index.GetDocsNum());
+  
   for (string current_query; getline(query_input, current_query);)
   {
     const auto words = SplitIntoWords(current_query);
 
-    vector<size_t> docid_count(index.GetDocsNum());
+    fill(docid_count.begin(), docid_count.end(), 0);
     for (const auto &word : words)
     {
       for (const size_t docid : index.Lookup(word))
@@ -46,7 +49,6 @@ void SearchServer::AddQueriesStream(
       }
     }
 
-    vector<size_t> search_results_indices(index.GetDocsNum());
     iota(search_results_indices.begin(), search_results_indices.end(), 0);
 
     auto top5_it = Head(search_results_indices, 5).end();
