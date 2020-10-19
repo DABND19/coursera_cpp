@@ -3,8 +3,7 @@ FLAGS=-std=c++17
 
 all: search
 
-search: main.o parse.o search_server.o 
-				test_runner.h profile.h iterator_range.h
+search: main.o parse.o search_server.o test_runner.h profile.h iterator_range.h
 	$(CC) $(FLAGS) -o search main.o parse.o search_server.o
 
 main.o: main.cpp
