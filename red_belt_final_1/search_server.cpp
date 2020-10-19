@@ -49,23 +49,14 @@ void SearchServer::AddQueriesStream(
     vector<size_t> search_results_indices(index.GetDocsNum());
     iota(search_results_indices.begin(), search_results_indices.end(), 0);
 
-    //  auto search_results_indices_middle = search_results_indices.begin() + 5;
-    sort(search_results_indices.begin(),
-         // search_results_indices_middle,
-         search_results_indices.end(), [&docid_count](size_t lhs, size_t rhs) {
-           return make_pair(docid_count[lhs], (int)-lhs) > make_pair(docid_count[rhs], (int)-rhs);
-         });
+    auto top5_it = Head(search_results_indices, 5).end();
 
-    //  sort(
-    //      begin(search_results),
-    //      end(search_results),
-    //      [](pair<size_t, size_t> lhs, pair<size_t, size_t> rhs) {
-    //        int64_t lhs_docid = lhs.first;
-    //        auto lhs_hit_count = lhs.second;
-    //        int64_t rhs_docid = rhs.first;
-    //        auto rhs_hit_count = rhs.second;
-    //        return make_pair(lhs_hit_count, -lhs_docid) > make_pair(rhs_hit_count, -rhs_docid);
-    //      });
+    partial_sort(search_results_indices.begin(),
+                 top5_it,
+                 search_results_indices.end(),
+                 [&docid_count](size_t lhs, size_t rhs) {
+                   return make_pair(docid_count[lhs], rhs) > make_pair(docid_count[rhs], lhs);
+                 });
 
     search_results_output << current_query << ':';
     for (auto docid : Head(search_results_indices, 5))
