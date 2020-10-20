@@ -22,8 +22,6 @@ using namespace std;
   query_input содержит не более 500 000 запросов, каждый запрос содержит от 1 до 10 слов.
 */
 
-const vector<size_t> EMPTY_DOCS_LIST;
-
 /*
   Построение обратного индекса устроено слудющим образом:
   1) Мы храним каждый документ в docs
@@ -31,11 +29,18 @@ const vector<size_t> EMPTY_DOCS_LIST;
   список документов, в котором оно содержится. Все это хранится в index.
   Такой процесс и называется построением обратного индекса.
 */
+
 class InvertedIndex
 {
 public:
+  struct Item
+  {
+    size_t docid;
+    size_t hitcount;
+  };
+
   void Add(string &&document);
-  vector<size_t> Lookup(const string &word) const;
+  vector<Item> Lookup(const string &word) const;
 
   const string &GetDocument(size_t id) const
   {
@@ -48,9 +53,11 @@ public:
   }
 
 private:
-  map<string, vector<size_t>> index;
+  map<string, vector<Item>> index;
   vector<string> docs;
 };
+
+const vector<InvertedIndex::Item> EMPTY_LOOKUP = {};
 
 class SearchServer
 {
