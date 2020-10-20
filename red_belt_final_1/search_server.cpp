@@ -79,14 +79,6 @@ void InvertedIndex::Add(string &&document)
 {
   docs.emplace_back(document);
 
-  /*
-    Здесь используется следующая гипотеза:
-    Индекс только что добавленного документа будет
-    больше, чем индекс предыдущих. Это значит, что
-    последовательность docid, лежащая в каждом элементе
-    словаря index будет возрастающей.
-  */
-
   const size_t docid = docs.size() - 1;
   for (const auto &word : SplitIntoWords(document))
   {
@@ -97,6 +89,14 @@ void InvertedIndex::Add(string &&document)
     }
     else
     {
+      /*
+        Здесь используется следующая гипотеза:
+        Индекс только что добавленного документа будет
+        больше, чем индекс предыдущих. Это значит, что
+        последовательность docid, лежащая в каждом элементе
+        словаря index будет возрастающей.
+      */
+      
       auto &last = doc_list.back();
       if (last.docid != docid)
       {
