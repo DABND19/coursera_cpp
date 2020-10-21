@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
+    <generated>
+      <config projectName="yellow_belt_final" targetName="yellow_belt_final" />
+    </generated>
+  </component>
+  <component name="CMakeSettings">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="ba1aa465-e74b-4cf7-b13b-1732dadceaac" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
+  <component name="ProjectId" id="1hBuJdrVZHGcUCtEmsbh3SDGBwQ" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="cf.first.check.clang-format" value="false" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="yellow_belt_final" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="yellow_belt_final" TARGET_NAME="yellow_belt_final" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="yellow_belt_final" RUN_TARGET_NAME="yellow_belt_final">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="GradleAppRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="com.jetbrains.cidr.cpp.gradle.execution.GradleNativeBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ba1aa465-e74b-4cf7-b13b-1732dadceaac" name="Default Changelist" comment="" />
+      <created>1599496735597</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1599496735597</updated>
+      <workItem from="1599496737047" duration="1914000" />
+      <workItem from="1599578982416" duration="5236000" />
+      <workItem from="1599755552292" duration="16000" />
+      <workItem from="1600034175413" duration="6348000" />
+      <workItem from="1600040542574" duration="21766000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="914" height="275" key="GridCell.Tab.0.bottom" timestamp="1600094760711">
+      <screen x="0" y="28" width="1920" height="1052" />
+    </state>
+    <state width="914" height="275" key="GridCell.Tab.0.bottom/0.28.1920.1052@0.28.1920.1052" timestamp="1600094760711" />
+    <state width="914" height="275" key="GridCell.Tab.0.center" timestamp="1600094760711">
+      <screen x="0" y="28" width="1920" height="1052" />
+    </state>
+    <state width="914" height="275" key="GridCell.Tab.0.center/0.28.1920.1052@0.28.1920.1052" timestamp="1600094760711" />
+    <state width="914" height="275" key="GridCell.Tab.0.left" timestamp="1600094760710">
+      <screen x="0" y="28" width="1920" height="1052" />
+    </state>
+    <state width="914" height="275" key="GridCell.Tab.0.left/0.28.1920.1052@0.28.1920.1052" timestamp="1600094760710" />
+    <state width="914" height="275" key="GridCell.Tab.0.right" timestamp="1600094760711">
+      <screen x="0" y="28" width="1920" height="1052" />
+    </state>
+    <state width="914" height="275" key="GridCell.Tab.0.right/0.28.1920.1052@0.28.1920.1052" timestamp="1600094760711" />
+    <state x="742" y="170" width="1022" height="737" key="SettingsEditor" timestamp="1600040033065">
+      <screen x="0" y="28" width="1920" height="1052" />
+    </state>
+    <state x="742" y="170" width="1022" height="737" key="SettingsEditor/0.28.1920.1052@0.28.1920.1052" timestamp="1600040033065" />
+    <state x="-399" y="342" width="670" height="1008" key="dock-window-1" timestamp="1600050853898">
+      <screen x="0" y="28" width="1920" height="1052" />
+    </state>
+    <state x="-399" y="342" width="670" height="1008" key="dock-window-1/0.28.1920.1052@0.28.1920.1052" timestamp="1600050853898" />
+    <state x="-381" y="504" width="1630" height="705" key="dock-window-2" timestamp="1600094760746">
+      <screen x="0" y="28" width="1920" height="1052" />
+    </state>
+    <state x="-381" y="504" width="1630" height="705" key="dock-window-2/0.28.1920.1052@0.28.1920.1052" timestamp="1600094760746" />
+    <state x="1235" y="349" width="432" height="436" key="refactoring.ChangeSignatureDialog" timestamp="1600040403512">
+      <screen x="0" y="28" width="1920" height="1052" />
+    </state>
+    <state x="1235" y="349" width="432" height="436" key="refactoring.ChangeSignatureDialog/0.28.1920.1052@0.28.1920.1052" timestamp="1600040403512" />
+  </component>
+</project>
